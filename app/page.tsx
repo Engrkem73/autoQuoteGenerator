@@ -71,10 +71,10 @@ export default function Home() {
   console.log(quote);
   console.log(countdownDuration);
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 w-full">
-      <div className="w-[800px] flex flex-col p-4 justify-between bg-blue-500 min-h-[400px] max-w-full">
-        <h3>{quote}</h3>
-        <button className="bg-gray-500 text-white px-4 py-2 rounded w-[100px] self-end" onClick={startButton}>{isCountdownActive ? "Stop" : "Start"}</button>
+    <main className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-purple-500 p-6">
+      <div className="w-full max-w-md flex flex-col p-6 bg-white rounded-lg shadow-lg">
+        <h3 className="text-3xl font-bold text-center text-gray-800 mb-4">{quote}</h3>
+        <button className="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition duration-300 ease-in-out self-center text-lg" onClick={startButton}>{isCountdownActive ? "Stop" : "Start"}</button>
       </div>
     </main>
   );
