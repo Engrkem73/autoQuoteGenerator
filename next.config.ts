@@ -5,3 +5,15 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+
+// next.config.js
+module.exports = {
+  async rewrites() {
+    return [
+      {
+        source: '/api/quotes',
+        destination: 'https://zenquotes.io/api/quotes', // Proxy to External API
+      },
+    ];
+  },
+};
